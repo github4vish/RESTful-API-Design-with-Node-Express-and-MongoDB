@@ -138,7 +138,7 @@ router.post('/image', upload.single('image'), async (req, res) => {
         }
     }); */
 
-    // Get all posts with pagination (index route)
+ /*   // Get all posts with pagination (index route)
 router.get('/', async (req, res) => {
     const page = parseInt(req.query.page) || 1;
     const limit = parseInt(req.query.limit) || 10;
@@ -161,7 +161,7 @@ router.get('/', async (req, res) => {
     } catch (err) {
         res.status(500).json({ message: err.message });
     }
-});
+}); */
 
 
  //Get all posts
