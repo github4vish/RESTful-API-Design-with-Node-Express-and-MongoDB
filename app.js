@@ -7,11 +7,7 @@ const express = require('express');
      app.use(express.json());
      app.use('/posts', postsRoute);
 
-     // Routes
-     app.get('/', (req, res) => {
-         res.send('We are on home');
-     });
-
+    
      // Connect to MongoDB using then and catch
      mongoose.connect('mongodb://localhost:27017/restful_api')
      .then(() => {

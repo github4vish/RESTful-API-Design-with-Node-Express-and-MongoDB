@@ -3,8 +3,8 @@ POST http://localhost:3000/posts
 Content-Type: application/json
 
 {
-    "title": "How to cassandra",
-     "description": "Learn how to cassandra",
+    "title": "How to test2",
+     "description": "Learn how to test",
       "author": "John Doe",
       "url": "/how-to-cassandra/",
       "tags": ["cassandraDB", "Database", "Learn"],
@@ -30,10 +30,10 @@ Content-Disposition: form-data; name="author"
 
 John Doe
 --boundary
-Content-Disposition: form-data; name="image"; filename="sample.png"
+Content-Disposition: form-data; name="image"; filename="uc.png"
 Content-Type: image/png
 
-< C:\Users\cselab2-01\Desktop\sample.png
+< C:\Users\cselab2-01\Desktop\uc.png
 --boundary--
 
 
@@ -43,11 +43,11 @@ GET http://localhost:3000/posts
 
 ### Get a specific post by ID
 # Replace <postId> with an actual post ID after creating a post
-GET http://localhost:3000/posts/66a0bb874adcd17880282cd3
+GET http://localhost:3000/posts/66e90a5bb68a249e690d6dbb
 
 ### Update a specific post by ID
 # Replace <postId> with an actual post ID after creating a post
-PATCH http://localhost:3000/posts/66a0bb874adcd17880282cd3
+PATCH http://localhost:3000/posts/66e90a5bb68a249e690d6dbb
 Content-Type: application/json
 
 {
@@ -63,9 +63,9 @@ Content-Type: application/json
 
 ### Delete a specific post by ID
 # Replace <postId> with an actual post ID after creating a post
-DELETE http://localhost:3000/posts/66a1cd9c5a3b7e739461cf64
+DELETE http://localhost:3000/posts/66e91103e859dc0cc4a374d3
 
 
 ### Get all posts with pagination
 # Adjust page and limit parameters as needed
-GET http://localhost:3000/posts?page=1&limit=2
+GET http://localhost:3000/posts?page=2&limit=5

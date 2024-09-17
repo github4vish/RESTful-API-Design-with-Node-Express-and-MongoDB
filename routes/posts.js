@@ -111,7 +111,7 @@ router.post('/image', upload.single('image'), async (req, res) => {
          try {
              const updatedPost = await Post.updateOne(
                  { _id: req.params.postId },
-                 { $set: { title: req.body.title } }
+                 { $set:  req.body  }
              );
              if (updatedPost.modifiedCount === 0) {
                  return res.status(404).json({ message: 'Post not found or no changes made' });
